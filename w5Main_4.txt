@@ -1,0 +1,25 @@
+ @startuml
+
+title Play RockScissorsPaper
+ start
+ :get userA input a;
+ :get userB input b;
+
+ if (rock win);
+    :rock or scissors;
+    :rock select user is winner;
+elseif (scissors win);
+    :scissors or paper;
+    :scissors select user is winner;
+elseif (paper win);
+    :paper or rock;
+    :paper select user is winner;
+elseif (draw);
+       :rock or rock;
+       :paper or paper;
+       :scissors or scissors;
+       :No winner;
+endif
+stop
+
+@enduml
