@@ -1,0 +1,19 @@
+start
+:get users height;
+:get users weight;
+
+:height/(weight*weight) : BMI;
+
+if ( BMI<=18.5)
+    :low weight;
+elseif (18.5< BMI <25)
+    :normal weight;
+elseif (25<= BMI <30)
+    :over weight;
+elseif(30<=BMI)
+    :obesity;
+endif;
+
+
+
+stop
