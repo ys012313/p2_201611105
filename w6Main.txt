@@ -1,0 +1,20 @@
+@startuml
+
+start
+
+:get input natural number;
+repeat
+
+:A;
+
+if(A is divided by 3 or 5) then (yes)
+:add A to sum;
+else (no)
+:do not add A to sum;
+endif
+repeat while (0<A<1000);
+:print sum;
+
+stop
+
+@enduml
