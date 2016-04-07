@@ -1,0 +1,20 @@
+@startuml
+start
+title Play High/Low Game
+:n=set random number;
+:your playing chance=a and input your number(=b);
+while( )
+if (not n=b) then (n<b)
+: print Your guess is high;
+else (n>b)
+:print Your guess is low;
+endif
+endwhile
+:chance is over or a=b;
+if ( ) then (over chance)
+:print You're Failed!;
+else (a=b)
+:print Good! You're correct!;
+endif
+:finish;
+stop
